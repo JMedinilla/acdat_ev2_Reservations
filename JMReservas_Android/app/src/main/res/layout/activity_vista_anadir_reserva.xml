@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8D8D8"
+    tools:context="com.javier.jmreservas.VistaAnadirReserva">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/hor"
+            android:id="@+id/txt11" />
+
+        <RadioGroup
+            android:id="@+id/radioGrupo"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uno"
+                android:id="@+id/radio1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dos"
+                android:id="@+id/radio2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tres"
+                android:id="@+id/radio3" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cuatro"
+                android:id="@+id/radio4" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cinco"
+                android:id="@+id/radio5" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seis"
+                android:id="@+id/radio6" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <DatePicker
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/selecFecha" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/aul"
+            android:id="@+id/txt12" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:text=""
+            android:id="@+id/tbxAnadirAula" />
+
+        <Button
+            android:background="#A4A4A4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reser"
+            android:id="@+id/btnReservar"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

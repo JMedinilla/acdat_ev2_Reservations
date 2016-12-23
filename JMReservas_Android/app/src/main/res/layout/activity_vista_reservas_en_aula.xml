@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8D8D8"
+    tools:context="com.javier.jmreservas.VistaReservasEnAula">
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tituloReservas"
+        android:id="@+id/txtNombreReservaEnAula"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:divider="@android:drawable/button_onoff_indicator_off"
+        android:dividerHeight="6dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listaReservasEnAula"
+        android:choiceMode="none"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

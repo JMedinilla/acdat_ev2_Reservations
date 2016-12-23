@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8D8D8"
+    tools:context="com.javier.jmreservas.VistaPrincipal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/conectAs"
+            android:id="@+id/txt2" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/rayas"
+            android:id="@+id/txtNombreProfesor" />
+    </LinearLayout>
+
+    <Button
+        android:background="#A4A4A4"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="@string/btnAulas"
+        android:id="@+id/btnVerAulasDisponibles"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:background="#A4A4A4"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="@string/btnMias"
+        android:id="@+id/btnVerReservas"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:background="#A4A4A4"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="@string/btnReservas"
+        android:id="@+id/btnVerReservasAula"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/numAula"
+            android:id="@+id/txt1" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/tbxVerReservasAula" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/mesAula"
+            android:id="@+id/txt3" />
+
+        <EditText
+            android:layout_marginRight="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/tbxVerReservasAulaMes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/diaAula"
+            android:id="@+id/txt4" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/tbxVerReservasAulaDia" />
+    </LinearLayout>
+
+    <Button
+        android:background="#A4A4A4"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="@string/btnAnadir"
+        android:id="@+id/btnAnadirReserva"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:background="#A4A4A4"
+        android:layout_marginTop="15dp"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="@string/btnCorreo"
+        android:id="@+id/btnEnviarEmail"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

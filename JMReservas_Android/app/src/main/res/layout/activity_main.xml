@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8D8D8"
+    tools:context="com.javier.jmreservas.MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/loginUsu"
+        android:id="@+id/txtUser"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbxUser"
+        android:inputType="text"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/loginContra"
+        android:id="@+id/txtContra"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/tbxContra"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:background="#A4A4A4"
+        android:layout_marginTop="40dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciarSesion"
+        android:id="@+id/btnConectar"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

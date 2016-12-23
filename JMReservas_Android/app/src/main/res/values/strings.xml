@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Reservas online (JM)</string>
+    <string name="iniciarSesion">Iniciar sesión</string>
+    <string name="loginContra">Contraseña</string>
+    <string name="loginUsu">Usuario</string>
+    <string name="reser">Reservar</string>
+    <string name="aul">Aula:</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="hor">Hora:</string>
+    <string name="aulasReg">Aulas registradas</string>
+    <string name="corMsg">Mensaje:</string>
+    <string name="corSub">Asunto:</string>
+    <string name="tituloCorreos">Profesores y administradores registrados</string>
+    <string name="tituloReservas">Reservas del aula:</string>
+    <string name="tituloMisReservas">Mis reservas</string>
+    <string name="elim">Eliminar</string>
+    <string name="btnCorreo">Enviar un correo</string>
+    <string name="btnAnadir">Realizar una reserva</string>
+    <string name="btnReservas">Consultar reservas de un aula</string>
+    <string name="btnMias">Consultar mis reservas</string>
+    <string name="btnAulas">Ver aulas disponibles</string>
+    <string name="conectAs">Conectado como:</string>
+    <string name="rayas">---</string>
+    <string name="numAula">Número de aula:</string>
+    <string name="mesAula">Mes:</string>
+    <string name="diaAula">Día:</string>
+</resources>

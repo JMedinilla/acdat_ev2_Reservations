@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<title>Documentación</title>
+	</head>
+
+	<body>
+		<h2>Documentación</h2>
+		<table border="3" cellspacing="6" cellpadding="6">
+			<tr>
+				<td align="center">URL</td>
+				<td align="center">Método</td>
+				<td align="center">Descripción</td>
+			</tr>
+			<tr>
+				<td>/api/add</td>
+				<td align="center">POST</td>
+				<td>Inserta una reserva en la base de datos. Espera los parámetros "hora", "dia", "mes", "anyo", "aula" y "profesor". Si el aula o el profesor no existen en la base de datos, devuelve un error. Esta URL se utiliza en la aplicación Android para que los usuarios conectados puedan realizar una reserva.</td>
+			</tr>
+			<tr>
+				<td>/api/mail</td>
+				<td align="center">POST</td>
+				<td>Permite a un administrador enviar un correo a un usuario. Espera los parámetros "from", "password", "to", "subject" y "message".</td>
+			</tr>
+			<tr>
+				<td align="center">---------</td>
+				<td align="center">---------</td>
+				<td align="center">---------</td>
+			</tr>
+			<tr>
+				<td>/api/eliminar/:eli</td>
+				<td align="center">DELETE</td>
+				<td>Permite eliminar una reserva especificada por su ID en la dirección. Esta URL se utiliza en la aplicación Android para que un usuario conectado pueda eliminar una de sus propias reservas.</td>
+			</tr>
+			<tr>
+				<td align="center">---------</td>
+				<td align="center">---------</td>
+				<td align="center">---------</td>
+			</tr>
+			<tr>
+				<td>/api/profesores</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todos los profesores y administradores registrados en la base de datos. Esta URL no se utiliza en la aplicación Android.</td>
+			</tr>
+			<tr>
+				<td>/api/profesores/admin/:ide</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar una versión reducida de los todos los profesores y administradores (sin usuario, contraseña y grado), a excepción del usuario con el ID especificado en la URL. Esta dirección se utiliza en la aplicación Android para que un administrador pueda enviar un correo electrónico al resto de usuarios registrados en la base de datos.</td>
+			</tr>
+			<tr>
+				<td>/api/profesores/:id</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todos los datos en la base de datos de un usuario registrado especificado por su ID. Esta URL no se utiliza en la aplicación Android.</td>
+			</tr>
+			<tr>
+				<td>/api/aulas</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todas las aulas registradas en la base de datos. Esta URL se utiliza en la aplicación Android para que los usuarios conectados puedan consultar las aulas disponibles para una reserva, además de indicar su número de aula, necesario para poder realizar una reserva.</td>
+			</tr>
+			<tr>
+				<td>/api/aulas/:numero</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar toda la información correspondiente al aula registrada y especificada por el número de aula indicado en la dirección. Esta URL no se utiliza en la aplicación Android.</td>
+			</tr>
+			<tr>
+				<td>/api/aulas/:numero/res</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todas las reservas realizadas sobre un aula registrada en la base de datos, indicando su número en la dirección. Esta URL se utiliza en la aplicación Android para que el usuario conectado pueda ver las reservas de un aula.</td>
+			</tr>
+			<tr>
+				<td>/api/aulas/:numero/res/m/:mes</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todas las reservas realizadas sobre un aula registrada en la base de datos, indicando su número en la dirección. Las reservas a mostrar serán todas aquellas realizadas para el mes especificado en la URL. Esta URL se utiliza en la aplicación Android para que el usuario conectado pueda ver las reservas de un aula en un mes concreto.</td>
+			</tr>
+			<tr>
+				<td>/api/aulas/:numero/res/m/:mes/d/:dia</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todas las reservas realizadas sobre un aula registrada en la base de datos, indicando su número en la dirección. Las reservas a mostrar serán todas aquellas realizadas para el dia del mes especificado en la URL. Esta URL se utiliza en la aplicación Android para que el usuario conectado pueda ver las reservas de un aula en un día concreto.</td>
+			</tr>
+			<tr>
+				<td>/api/res</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todas las reservas realizadas en la base de datos. Esta URL no se utiliza en la aplicación Android.</td>
+			</tr>
+			<tr>
+				<td>/api/res/profesor/:num</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar todas las reservas realizadas por un profesor especificado en la dirección. Esta URL se utiliza en la aplicación Android para que el usuario conectado pueda ver sus propias reservas.</td>
+			</tr>
+			<tr>
+				<td>/api/res/:id</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar toda la información de una reserva especificada por su ID en la dirección. Esta URL no se utiliza en la aplicación Android.</td>
+			</tr>
+			<tr>
+				<td>/api/login/:usuario</td>
+				<td align="center">GET</td>
+				<td>Permite visualizar toda la información de un usuario concreto, especificado por su usuario de conexión. Esta URL se utiliza en la aplicación Android cuando el usuario intenta conectarse, tanto para comprobar su existencia, como para almacenar sus datos una vez se ha conectado.</td>
+			</tr>
+		</table>
+	</body >
+</html>

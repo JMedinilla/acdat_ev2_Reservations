@@ -1,0 +1,5 @@
+[09-Feb-2016 04:59:48 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/portadaa/public_html/javier/slimrest/app/routes.php on line 23
+[09-Feb-2016 05:03:49 America/Chicago] PHP Fatal error:  Call to a member function getStatus() on a non-object in /home/portadaa/public_html/javier/slimrest/app/routes.php on line 232
+[09-Feb-2016 05:07:34 America/Chicago] PHP Fatal error:  Call to a member function getStatus() on a non-object in /home/portadaa/public_html/javier/slimrest/app/routes.php on line 232
+[09-Feb-2016 05:09:28 America/Chicago] PHP Fatal error:  Call to a member function getStatus() on a non-object in /home/portadaa/public_html/javier/slimrest/app/routes.php on line 232
+[09-Feb-2016 05:12:40 America/Chicago] PHP Fatal error:  Call to a member function getStatus() on a non-object in /home/portadaa/public_html/javier/slimrest/app/routes.php on line 232
